@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+/*this is for the style of the page*/
+.bgc{background-color:black;}
+header{color:lightgreen;text-align:center;}
+
+#maindbody{background-image:url('test2.jpg');background-repeat:no-repeat;background-position:center;}
+
+/*changing the colors of the links*/
+a{color:pink;}
+
+
+html,body {margin:0;padding:0;height:100%;border:none;min-height:100%;}
+#summary{float: left;
+   background-color: #cfc;
+   color: #030;
+  margin:0;padding:0;
+  width:30%;
+  height:100%}
+  
+#main{float: left;
+   background-color: #ccf;
+   color: #003;
+   margin:0;padding:0;
+  width:70%;
+  height:100%;
+  background-image:url('test2.jpg');background-repeat:no-repeat;background-position:center;}
+
+</style>
+
+</head>
+<body>
+
+<header><h1 style="text-align:center;border-style:dashed;border-width:10px;background-color:black;">JLucas' Mo Awesome site<h1></header>
+  
+<nav style="border-style:dashed;border-width:5px;background-color:black;"><a href="mainpage.html">Main</a> |
+<a href="forms.html">Form</a> |
+<a href="">Nothing</a></nav>
+
+  <section id="summary"><h1>Summary</h1><br><p>this is where the summary goes if there was one</p></section>
+  <section id="main"><h1>main contents</h1><br><p>this is where the main contents would be if there was some</p>
+
+<form action="forms.html">
+  Select your favorite color: <input type="color" name="favcolor"><br>
+
+
+Birthday: <input type="date" name="bday"><br>
+
+  Birthday (date and time): <input type="datetime" name="bdaytime"><br>
+
+  E-mail: <input type="email" name="email"><br>
+
+  Birthday (month and year): <input type="month" name="bdaymonth"><br>
+
+  Quantity (between 1 and 5): <input type="number" name="quantity" min="1" max="5"><br>
+
+Points: <input type="range" name="points" min="1" max="10"><br>
+
+  Search Google: <input type="search" name="googlesearch"><br>
+
+  Add your homepage: <input type="url" name="homepage"><br>
+
+  <input type="submit">
+</form></section>
+
+<footer style="border-style:solid;border-width:5px;clear:both"><p>Copyright (c) Jeffrey Lucas</p></footer>
+
+</body>
+</html>

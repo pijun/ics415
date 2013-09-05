@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+/*this is for the style of the page*/
+.bgc{background-color:black;}
+#theader{color:lightgreen;text-align:center;}
+
+#maindbody{background-image:url('test2.jpg');background-repeat:no-repeat;background-position:center;}
+
+/*this is to color the borders*/
+table,th,td,tfoot{border:2px solid lightgreen;}
+
+/*changing the colors of the links*/
+a{color:pink;}
+
+h2,caption,p,ul,li,dl,ol{color:lightgreen}
+
+
+html,body {margin:0;padding:0;height:100%;border:none;min-height:100%;}
+</style>
+
+</head>
+
+
+<body>
+<table style="width:100%;min-height:100%;">
+<th class="bgc" style="height:25%;" colspan="2"><h1 id="theader">JLucas'Awesome site</h1></th>
+
+<tr class="bgc" style="height:50px;"><td colspan="2"><a href="mainpage.html">Home</a> <a href="forms.html">Forms</a> <a href="frame.html">Frame</a></td></tr>
+
+<!--main part 2 sidebar and main page-->
+
+<tr style="height:75%;">
+<td width="25%" class="bgc" style="height:75%;">
+<h2>Summary window</h2>
+<p>HTML supports tables</p>
+<p>HTML supports three different types of lists;unordered, ordered, and description.</p>
+</td>
+
+
+
+<td width="75%" id="maindbody" class="bgc" style="height:75%;">
+<h2>Home Page</h2>
+<p>Tables:</p>
+
+
+<table border="1">
+<caption>Bordered Table</caption>
+<th style="color:lightgreen" >header 1</th><th style="color:lightgreen">header 2</th>
+<tr style="color:lightgreen"><td>row 1, cell 1</td><td>row 1, cell 2</td></tr>
+<tr style="color:lightgreen"><td>row 2, cell 1</td><td>row 2, cell 2</td></tr>
+<tfoot style="color:lightgreen"><td>footer 1</td><td>footer 2</td></tfoot>
+</table>
+
+<p>Lists:</p>
+<ul>
+<li>Coffee</li>
+<li>Milk</li>
+</ul>
+
+<ol>
+<li>Coffee</li>
+<li>Milk</li>
+</ol>
+
+<dl>
+<dt>Coffee</dt>
+<dd>- black hot drink</dd>
+<dt>Milk</dt>
+<dd>- white cold drink</dd>
+</dl>
+
+</td>
+
+</tr>
+
+<tfoot><td colspan="2" class="bgc" style="color:lightgreen;height:50px;">Copyright (c) Jeffrey Lucas</td></tfoot>
+</table>
+
+</body>
+</html>

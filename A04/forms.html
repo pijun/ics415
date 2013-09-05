@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+/*this is for the style of the page*/
+.bgc{background-color:black;}
+#theader{color:lightgreen;text-align:center;}
+
+#maindbody{background-image:url('test2.jpg');background-repeat:no-repeat;background-position:center;}
+
+/*this is to color the borders*/
+table,th,td,tfoot{border:2px solid lightgreen;}
+
+/*changing the colors of the links*/
+a{color:pink;}
+
+h2,caption,p,ul,li,dl,ol,form{color:lightgreen}
+
+html,body {margin:0;padding:0;height:100%;border:none;min-height:100%;}
+</style>
+
+</head>
+
+<body>
+
+
+<table style="width:100%;min-height:100%;">
+
+<th class="bgc" style="height:25%;" colspan="2"><h1 id="theader">JLucas'Awesome site</h1></th>
+
+<tr class="bgc" style="height:50px;"><td colspan="2"><a href="mainpage.html">Home</a> <a href="forms.html">Forms</a> <a href="frame.html">Frame</a></td></tr>
+
+<!--main part 2 sidebar and main page-->
+
+<tr style="height:75%;">
+<td width="25%" class="bgc" style="height:75%;">
+<h2>Forms Summary</h2>
+<p>HTML supports several different types of INput</p>
+</td>
+
+
+
+<td width="75%" id="maindbody" class="bgc" style="height:75%;">
+<h2>Forms Page</h2>
+
+<form action="forms.html">
+  Select your favorite color: <input type="color" name="favcolor"><br>
+
+
+Birthday: <input type="date" name="bday"><br>
+
+  Birthday (date and time): <input type="datetime" name="bdaytime"><br>
+
+  E-mail: <input type="email" name="email"><br>
+
+  Birthday (month and year): <input type="month" name="bdaymonth"><br>
+
+  Quantity (between 1 and 5): <input type="number" name="quantity" min="1" max="5"><br>
+
+Points: <input type="range" name="points" min="1" max="10"><br>
+
+  Search Google: <input type="search" name="googlesearch"><br>
+
+  Add your homepage: <input type="url" name="homepage"><br>
+
+  <input type="submit">
+</form>
+
+
+</tr>
+
+<tfoot><td colspan="2" class="bgc" style="color:lightgreen;height:50px;">Copyright (c) Jeffrey Lucas</td></tfoot>
+</table>
+
+
+
+</body>
+</html>
