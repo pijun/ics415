@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<!--css file-->
+<link href="myCss.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="test" class="foo bar">
+    <p id="test1">click the button to find the class of an element with a class already</p>
+    <button type="button" onclick="getClasses('test')">get classes</button>
+    <button type="button" onclick="addClass('test','red')">add class "red"</button>
+</div>
+
+<div id="test2">
+<p>this div does not have a class, testing for this</p>
+<button type="button" onclick="getClasses('test2')">get classes</button>
+    <button type="button" onclick="addClass('test2','red')">add class "red"</button>
+
+</div>
+<br>
+<br>
+<br>
+
+    <form id="form" name="myForm" action="demo-form.html" onsubmit="return validateForm()" method="post">
+User name: <input type="text" id="name" name="name"><br/>
+Email: <input type="email" id="email" name="email"><br/>
+Password: <input type="password" id="password" name="password"><br/>
+Confirm Password: <input type="password" id="confirm" name="confirm"><br/>
+<input type="submit" value="Submit">
+        </form>
+
+
+<!-- javascript file-->
+<script src="myScript.js">
+</script>
+</body>
+
+</html>
