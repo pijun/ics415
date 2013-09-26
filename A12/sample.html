@@ -1,0 +1,33 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+	var value = $("#url").val();
+    alert(value);
+	$("#frame").load(value);
+  });
+});
+</script>
+</head>
+<body>
+<div id='tools'>
+
+
+	<label for='url'>Enter your site</label>
+	<input id='url' name='url' type='text' placeholder="test" value=''>
+	<button>GO</button>
+       
+</div>
+
+
+<div class='device'>
+<iframe src="" id='frame' width="480" height="320"></iframe>
+</div><!-- /device -->
+
+
+</body>
+
+</html>

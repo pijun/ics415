@@ -1,0 +1,188 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+function grab(){
+	var url = $("#url").val();
+	$.get(url,function(data){
+		var page = $(data);
+		console.log(page);
+		var count = page.find("p");
+		console.log(count.length);
+		
+ var tags = [
+    'a',
+    'abbr',
+    'acronym',
+    'address',
+    'applet',
+    'area',
+    'article',
+    'aside',
+    'audio',
+    'b',
+    'base',
+    'basefont',
+    'bdi',
+    'bdo',
+    'bgsound',
+    'big',
+    'blink',
+    'blockquote',
+    'body',
+    'br',
+    'button',
+    'canvas',
+    'caption',
+    'center',
+    'cite',
+    'code',
+    'col',
+    'colgroup',
+    'data',
+    'datalist',
+    'dd',
+    'del',
+    'details',
+    'dfn',
+    'dir',
+    'div',
+    'dl',
+    'dt',
+    'em',
+    'embed',
+    'fieldset',
+    'figcaption',
+    'figure',
+    'font',
+    'footer',
+    'form',
+    'frame',
+    'frameset',
+    'h1',
+    'h2',
+    'h3',
+    'h4',
+    'h5',
+    'h6',
+    'head',
+    'header',
+    'hgroup',
+    'hr',
+    'html',
+    'i',
+    'iframe',
+    'img',
+    'input',
+    'ins',
+    'isindex',
+    'kbd',
+    'keygen',
+    'label',
+    'legend',
+    'li',
+    'link',
+    'listing',
+    'main',
+    'map',
+    'mark',
+    'marquee',
+    'menu',
+    'menuitem',
+    'meta',
+    'meter',
+    'nav',
+    'nobr',
+    'noframes',
+    'noscript',
+    'object',
+    'ol',
+    'optgroup',
+    'option',
+    'output',
+    'p',
+    'param',
+    'plaintext',
+    'pre',
+    'progress',
+    'q',
+    'rp',
+    'rt',
+    'ruby',
+    's',
+    'samp',
+    'script',
+    'section',
+    'select',
+    'small',
+    'source',
+    'spacer',
+    'span',
+    'strike',
+    'strong',
+    'style',
+    'sub',
+    'summary',
+    'sup',
+    'table',
+    'tbody',
+    'td',
+    'textarea',
+    'tfoot',
+    'th',
+    'thead',
+    'time',
+    'title',
+    'tr',
+    'track',
+    'tt',
+    'u',
+    'ul',
+    'var',
+    'video',
+    'wbr',
+    'xmp'
+  ];
+		$("#table").append("<tr><td>tag</td><td>count</td></tr>");
+		for(var i=0; i < tags.length; i++){
+			var count = page.find(tags[i]);
+			console.log(count.length);
+
+				$("#table").append("<tr><td>"+tags[i]+"</td>"+"<td>"+count.length+"</td>"+"</tr>");
+
+			
+		}	
+	});
+}
+
+function source(){
+	var url = $("#url").val();
+	$.get(url,function(data){
+		var page = $(data);
+		console.log(page);
+		var source = page.filter("script");
+		console.log(source.length);	
+		source = page.filter("src");
+	});
+}
+</script>
+</head>
+<body>
+<div id='tools'>
+
+<form>
+	<label for='url'>Enter your site</label>
+	<input id='url' type='text' placeholder="test">
+	<button type="button" onclick="grab()">table</button>
+	<button type="button" onclick="source()">script source</button>
+</form>  
+
+
+<div id="wrapper"></div>
+<table id="table" border="1"></table>
+</div>
+
+</body>
+
+</html>

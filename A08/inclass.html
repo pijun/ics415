@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+function geturl(){
+	alert("blah");
+	$("iframe").load($("url").val());
+}
+
+</script></head>
+<body>
+<div class="container">
+
+    <h3>480 pixels wide by 320 pixel</h3>
+    <div class="iframe1">    
+        <iframe src="" width="480" height="320">
+        </iframe>
+    </div>
+    <br>
+    
+    <h3>768 pixels wide by 1024 pixels<h3>
+    <div class="iframe2">
+        <iframe src="" width="768" height="1024">
+        </iframe>
+    </div>
+
+    URL: <input type="url" name="url" id="url">
+    <button type="submit" onclick="geturl()">Submit</button><br>
+
+
+
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="myjs.js"></script>
+</body>
+</html>
